@@ -6,7 +6,7 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Smarter Email"/>
   <Description DefaultValue="Makes your simple emails sound smarter."/>
-  <HighResolutionIconUrl DefaultValue="http://s14.postimg.org/k3waarcm9/app_icon.png"/>
+  <HighResolutionIconUrl DefaultValue="https://raw.githubusercontent.com/martellaj/smarter-email/master/app-icon.png"/>
   <!--<SupportUrl DefaultValue="[Support URL]"/>-->
   <Hosts>
     <Host Name="Mailbox"/>
