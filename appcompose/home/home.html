@@ -1,0 +1,29 @@
+<div class="ms-Grid">
+	<div class="ms-Grid-row">
+		<div class="ms-Grid-col ms-u-sm12">
+			<h3>After you write your email, simply decide the upper and lower lengths of the words you want to replace and they'll be replaced by smarter words.</h3>
+			
+			<!-- Ranges -->
+			<div class="ranges">
+				<label><strong>Minimum character count</strong></label>
+				<input class="ms-TextField" type="number" value="home.min" ng-model="home.min" />
+							
+				<label><strong>Maximum character count</strong></label>
+				<input class="ms-TextField" type="number" value="home.max" ng-model="home.max" />
+			</div>
+			
+			<!-- Error messages -->
+			<p class="ms-fontColor-redDark" ng-show="home.min < 3">The minimum must be at least 3.</p>
+			<p class="ms-fontColor-redDark" ng-show="home.max > 20">The maximum can't be larger than 20.</p>
+			<p class="ms-fontColor-redDark" ng-show="home.min > home.max">The minimum must be smaller than or equal to the maximum.</p>					
+			
+			<!-- Submit button -->
+			<div class="center-button">
+				<button class="ms-Button" ng-disabled="home.min < 3 || home.max > 20 || home.min > home.max" ng-click="home.makeSmart()">Make me sound smarter</button>
+			</div>
+			
+			<p class="ms-fontColor-greenDark">{{ home.result }}</p>	
+			
+		</div><!-- grid col -->
+	</div><!-- grid row -->
+</div><!-- grid -->

@@ -1,0 +1,26 @@
+.ms-TextField {
+	display: block;
+	margin-bottom: 12px;
+}
+
+.ms-Button {
+	margin-top: 12px;
+	margin: 0 auto;
+}
+
+input {
+	width: 50px;
+}
+
+.ms-Button:disabled {
+	color: #c0c0c0;
+	background-color: #E5E5E5;
+}
+
+.center-button {
+	text-align: center;
+}
+
+.ranges {
+	margin: 24px 0;
+}
